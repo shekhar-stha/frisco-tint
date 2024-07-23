@@ -1,0 +1,342 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Color Set */
+:root {
+  --primary: #325aa8;
+  --secondary: rgb(251, 255, 41);
+  --warning: rgb(236, 43, 37);
+  --success: rgb(236, 241, 233);
+  --danger: rgba(212, 210, 210, 0.25);
+  --dark: rgb(33, 37, 41);
+  --info: rgb(128, 128, 128);
+  --light: rgb(251, 251, 251);
+  --black: rgb(48, 44, 44);
+  --white: rgb(252, 254, 247);
+  --creamWhite: rgb(247, 242, 237);
+  --body: rgb(255, 255, 255);
+
+  /* Headline */
+  font-family: "Poppins", sans-serif;
+  --headline-font-weight: 700;
+
+  /* Primary Texts */
+  --primary-font: "Poppins", sans-serif;
+  --primary-font-weight: 400;
+
+  /* Hyperlink Color */
+  --ahref-color: var(--dark);
+  --ahref-hover-color: var(--primary);
+
+  /* Used for text */
+  --bs-primary-rgb: 50, 90, 168;
+  --bs-secondary-rgb: 251, 255, 41;
+  --bs-success-rgb: 70, 178, 18;
+  --bs-info-rgb: 128, 128, 128;
+  --bs-warning-rgb: 236, 43, 37;
+  --bs-danger-rgb: 212, 210, 210;
+  --bs-light-rgb: 251, 251, 251;
+  --bs-dark-rgb: 33, 37, 41;
+  /* Finish */
+
+  /* Navigation */
+  --navigation-link-background: none;
+  --navigation-link-color: var(--white);
+  --navigation-link-border-color: var(--white);
+  --navigation-link-text-decoration: none;
+  --navigation-link-hover-color: var(--white);
+  --upper-nav-icon-color: var(--primary);
+
+  /* Hero */
+  --hero-overlay: linear-gradient(0deg, rgba(23,52,107,0.6671918767507004) 1%, rgba(9,25,55,0.9192927170868347) 61%);
+  --hero-heading-color: var(--white);
+  --hero-font-size: 50px;
+  --hero-font-weight: 600;
+  --hero-highlighted-text: var(--white);
+  --hero-highlighted-text-font-weight: 700;
+  --hero-paragraph-font-size: 20px;
+  --hero-paragraph-color: var(--white);
+  --hero-primary-button: var(--primary);
+  --hero-primary-button-text: var(--white);
+  --hero-secondary-button: transparent;
+  --hero-secondary-button-text: var(--white);
+  --hero-secondary-button-text-color: var(--dark);
+
+  /* About Us */
+  --about-us-after-effect-color: var(--primary);
+  --about-us-img-data-bg-color: var(--primary);
+  --about-us-img-data-text-color: var(--white);
+
+  /* Services */
+  --services-section-background-color: #f4f3fc;
+  --services-header-color: var(--primary);
+  --service-background-color-1: #edfcfd;
+  --service-background-color-2: #fffef6;
+  --service-phone-background-color: var(--primary);
+  --services-phone-icon-color: var(--white);
+
+  /* Light Section */
+  --light-section-background: var(--body);
+  --light-section-text: var(--dark);
+  --light-section-header-color: var(--dark);
+  --light-section-sub-header-color: var(--dark);
+  --light-section-sub-header-border-color: var(--primary);
+  --light-section-primary-button: var(--primary);
+  --light-section-primary-button-text: var(--white);
+  --light-section-secondary-button: transparent;
+  --light-section-secondary-button-text: var(--primary);
+  --light-section-ahref-color: var(--dark);
+  --light-section-ahref-hover-color: var(--primary);
+
+  /* Dark Section */
+  --dark-section-background: var(--dark);
+  --dark-section-text: var(--white);
+  --dark-section-header-color: var(--white);
+  --dark-section-sub-header-color: var(--white);
+  --dark-section-sub-header-border-color: var(--white);
+  --dark-section-primary-button: var(--primary);
+  --dark-section-primary-button-text: var(--white);
+  --dark-section-secondary-button: transparent;
+  --dark-section-secondary-button-text: var(--primary);
+  --dark-section-ahref-color: var(--white);
+  --dark-section-ahref-hover-color: var(--primary);
+
+  /* Footer */
+  --footer-section-background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.8603816526610644) 33%,
+    rgba(0, 0, 0, 0.8547794117647058) 65%,
+    rgba(0, 0, 0, 0.8295693277310925) 84%
+  );
+  --footer-headline-color: var(--white);
+  --footer-section-text-color: var(--white);
+  --footer-section-ahref-color: var(--white);
+  --footer-section-ahref-hover-color: var(--white);
+  --footer-section-icon-color: var(--white);
+
+  /* Primary Overlay Section */
+  --primary-overlay-bg-color: rgba(18, 43, 94, 0.87);
+  --primary-overlay-header-color: var(--white);
+  --primary-overlay-sub-header-color: var(--white);
+  --primary-overlay-sub-header-border-color: var(--primary);
+  --primary-overlay-primary-button: var(--white);
+  --primary-overlay-primary-button-text: var(--primary);
+  --primary-overlay-secondary-button: transparent;
+  --primary-overlay-secondary-button-text: var(--primary);
+  --primary-overlay-ahref-color: var(--white);
+  --primary-overlay-ahref-hover-color: var(--primary);
+  --primary-overlay-slick-arrow-bg: var(--white);
+  --primary-overlay-slick-arrow-color: var(--primary);
+  --primary-overlay-slick-dots-bg: rgb(35, 142, 230);
+
+  /* Services */
+  --services-header-color: var(--primary);
+  --service-background-color-1: #f4fcf3;
+  --service-background-color-2: #fffef6;
+}
+
+/* Apply */
+/* Light Section */
+.light-section {
+  background-color: var(--light-section-background);
+}
+
+.light-section p {
+  color: var(--light-section-text);
+}
+
+.light-section .header {
+  color: var(--light-section-header-color);
+}
+
+.light-section .sub-header {
+  color: var(--light-section-sub-header-color);
+}
+
+.light-section .sub-header::after {
+  background-color: var(--light-section-sub-header-border-color);
+}
+
+.light-section .btn-primary {
+  border: 2px solid var(--light-section-primary-button) !important;
+  background-color: var(--light-section-primary-button) !important;
+  color: var(--light-section-primary-button-text) !important;
+}
+
+.light-section .btn-primary:hover {
+  border: 2px solid var(--light-section-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--light-section-primary-button) !important;
+}
+
+.light-section .btn-secondary {
+  border: 2px solid var(--light-section-secondary-button-text) !important;
+  background-color: var(--light-section-seconadary-button) !important;
+  color: var(--light-section-secondary-button-text) !important;
+}
+
+.light-section .btn-secondary:hover {
+  border: 2px solid var(--light-section-secondary-button-text) !important;
+  background-color: var(--light-section-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+.light-section .link {
+  color: var(--light-section-ahref-color);
+}
+
+.light-section .link:hover {
+  color: var(--light-section-ahref-hover-color);
+}
+
+/* Dark Section */
+.dark-section {
+  background-color: var(--dark-section-background);
+}
+
+.dark-section p {
+  color: var(--dark-section-text) !important;
+}
+
+.dark-section .header {
+  color: var(--dark-section-header-color);
+}
+
+.dark-section .sub-header {
+  color: var(--dark-section-sub-header-color);
+}
+
+.dark-section .sub-header::after {
+  background-color: var(--dark-section-sub-header-border-color);
+}
+
+.dark-section .btn-primary {
+  border: 2px solid var(--dark-section-primary-button) !important;
+  background-color: var(--dark-section-primary-button) !important;
+  color: var(--dark-section-primary-button-text) !important;
+}
+
+.dark-section .btn-primary:hover {
+  border: 2px solid var(--dark-section-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--dark-section-primary-button) !important;
+}
+
+.dark-section .btn-secondary {
+  border: 2px solid var(--dark-section-secondary-button-text) !important;
+  background-color: var(--dark-section-seconadary-button) !important;
+  color: var(--dark-section-secondary-button-text) !important;
+}
+
+.dark-section .btn-secondary:hover {
+  border: 2px solid var(--dark-section-secondary-button-text) !important;
+  background-color: var(--dark-section-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+.dark-section .link {
+  color: var(--dark-section-ahref-color);
+}
+
+.dark-section .link:hover {
+  color: var(--dark-section-ahref-hover-color);
+}
+
+/* Primary Overlay */
+.primary-overlay::after {
+  position: absolute;
+  content: "";
+  background-color: var(--primary-overlay-bg-color);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.primary-overlay .sub-header {
+  color: var(--primary-overlay-sub-header-color);
+}
+
+.primary-overlay .slick-arrow {
+  background-color: var(--primary-overlay-slick-arrow-bg);
+  color: var(--primary-overlay-slick-arrow-color);
+}
+
+.primary-overlay .slick-dots li.slick-active button {
+  background-color: var(--primary-overlay-slick-dots-bg);
+}
+.primary-overlay .header {
+  color: var(--primary-overlay-header-color);
+}
+
+.primary-overlay .sub-header::after,
+.primary-overlay .sub-header-center::after {
+  background-color: var(--primary-overlay-sub-header-border-color);
+}
+
+.primary-overlay .btn-primary {
+  border: 2px solid var(--primary-overlay-primary-button) !important;
+  background-color: var(--primary-overlay-primary-button) !important;
+  color: var(--primary-overlay-primary-button-text) !important;
+}
+
+.primary-overlay .btn-primary:hover {
+  border: 2px solid var(--primary-overlay-primary-button) !important;
+  background-color: transparent !important;
+  color: var(--primary-overlay-primary-button) !important;
+}
+
+.primary-overlay .btn-secondary {
+  border: 2px solid var(--primary-overlay-secondary-button-text) !important;
+  background-color: var(--primary-overlay-secondary-button) !important;
+  color: var(--primary-overlay-secondary-button-text) !important;
+}
+
+.primary-overlay .btn-secondary:hover {
+  border: 2px solid var(--primary-overlay-secondary-button-text) !important;
+  background-color: var(--primary-overlay-secondary-button-text) !important;
+  color: var(--white) !important;
+}
+
+/* Hyperlinks */
+.link {
+  color: var(--ahref-color);
+}
+
+.link:hover {
+  color: var(--ahref-hover-color);
+}
+
+body {
+  margin: 0;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  color: var(--bs-body-color);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(48, 44, 44, 0);
+}
+
+/* White Top Information */
+.top-information-div {
+  background-color: var(--white);
+  padding: 2rem 0;
+}
+
+nav {
+
+  background: linear-gradient(180deg, rgb(28, 55, 109) 0%, rgba(50, 90, 168,1) 100%);
+}
+
+@media (max-width: 1200px) {
+  nav {
+    background: none;
+    background-color: var(--white);
+  }
+}
+
+/* Completed */
