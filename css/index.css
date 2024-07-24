@@ -2,11 +2,7 @@
 @import "/css/extra.css";
 
 .first-nav {
-  background: linear-gradient(
-    180deg,
-    rgb(50, 90, 168) 0%,
-    rgba(28, 55, 109, 1) 100%
-  );
+  background: linear-gradient(180deg, rgb(12, 26, 53) 0%, rgb(0, 0, 0) 100%);
 
   /* background: linear-gradient(
     180deg,
@@ -222,9 +218,9 @@ nav .navbar-nav .nav-link:hover {
 }
 
 .nav-hero .hero .btn-primary:hover {
-  border: 2px solid var(--hero-primary-button) !important;
+  border: 2px solid var(--white) !important;
   background-color: transparent !important;
-  color: var(--hero-primary-button) !important;
+  color: var(--white)
 }
 
 .nav-hero .hero .btn-secondary {

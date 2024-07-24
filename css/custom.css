@@ -3,7 +3,7 @@
 /* Color Set */
 :root {
   --primary: #325aa8;
-  --secondary: rgb(248, 241, 51);
+  --secondary: rgb(232, 156, 33);
   --warning: rgb(236, 43, 37);
   --success: rgb(236, 241, 233);
   --danger: rgba(212, 210, 210, 0.25);
@@ -29,7 +29,7 @@
 
   /* Used for text */
   --bs-primary-rgb: 50, 90, 168;
-  --bs-secondary-rgb: 248, 241, 51;
+  --bs-secondary-rgb: 232, 156, 33;
   --bs-success-rgb: 70, 178, 18;
   --bs-info-rgb: 128, 128, 128;
   --bs-warning-rgb: 236, 43, 37;
