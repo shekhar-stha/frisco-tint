@@ -3,7 +3,7 @@
 /* Color Set */
 :root {
   --primary: #325aa8;
-  --secondary: rgb(251, 255, 41);
+  --secondary: rgb(248, 241, 51);
   --warning: rgb(236, 43, 37);
   --success: rgb(236, 241, 233);
   --danger: rgba(212, 210, 210, 0.25);
@@ -29,7 +29,7 @@
 
   /* Used for text */
   --bs-primary-rgb: 50, 90, 168;
-  --bs-secondary-rgb: 251, 255, 41;
+  --bs-secondary-rgb: 248, 241, 51;
   --bs-success-rgb: 70, 178, 18;
   --bs-info-rgb: 128, 128, 128;
   --bs-warning-rgb: 236, 43, 37;
@@ -329,7 +329,7 @@ body {
 
 nav {
 
-  background: linear-gradient(180deg, rgb(28, 55, 109) 0%, rgba(50, 90, 168,1) 100%);
+  background: linear-gradient(180deg, rgb(12, 26, 53) 0%, rgb(0, 0, 0) 100%);
 }
 
 @media (max-width: 1200px) {
