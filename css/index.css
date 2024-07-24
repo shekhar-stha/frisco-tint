@@ -308,6 +308,7 @@ nav .navbar-nav .nav-link:hover {
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-transform: capitalize;
+  text-shadow: 0 0 8px var(--dark);
 }
 
 @media (max-width: 576px) {
