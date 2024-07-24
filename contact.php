@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = isset($_POST['phone']) ? sanitize_input($_POST['phone']) : '';
     $email = isset($_POST['email']) ? sanitize_input($_POST['email']) : '';
     $details = isset($_POST['details']) ? sanitize_input($_POST['details']) : '';
-    $send_to = 'reciever_email@gmail.com';
+    $send_to = 'inquiry@friscotint.com';
 	
 	$hash_salt = base64_encode(strtolower(strrev(substr(str_rot13(preg_replace('#[a-zA-Z]#','',$send_to)),0,12))));
 	$hash_salt = substr(str_rot13(preg_replace('#[a-zA-Z0-9]#','',$hash_key)),1,10);
